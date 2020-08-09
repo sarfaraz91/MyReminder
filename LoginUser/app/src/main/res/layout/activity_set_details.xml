@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:elevation="3dp"
+    android:layout_height="350dp"
+    tools:ignore="UnusedAttribute">
+
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txt_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/error_txt"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/txt_error_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_dialog_title"
+            android:text="@string/bookalert"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/errormessagecolor"
+            android:fontFamily="@font/raleway" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_error_description"
+            android:text="@string/button_yes"
+            android:id="@+id/btn_yes"
+            android:fontFamily="@font/raleway"
+            android:textColor="@color/errortextconfirmcolor"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/okbtn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_error_description"
+            android:text="@string/button_no"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_no"
+            android:fontFamily="@font/raleway"
+            android:textColor="@color/errortextconfirmcolor"
+            android:textSize="18sp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/okbtn"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp" />
+
+    </RelativeLayout>-->
+<!--</>--><!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SetDetails">
+
+
+    <RadioGroup
+        android:id="@+id/rg_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_setTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:text="Time" />
+
+        <RadioButton
+            android:id="@+id/rb_setPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="60dp"
+            android:text="Location" />
+    </RadioGroup>
+
+
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="50dp"
+        android:hint="@string/select_time" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/select_date"
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="@string/repeat" />
+
+
+
+</LinearLayout>-->
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fyp.reminder">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:name=".Utils.AppController"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/my_reminder"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NotificationActivityForAuto" />
+        <activity
+            android:name=".NotificationActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity="" />
+        <activity
+            android:name=".DetailTry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlaceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlaceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlaceListOnMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OptionScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Update_reminder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".SetDetails" />
+        <activity android:name=".SetPriority" />
+        <activity
+            android:name=".CreateReminder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AddReminder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserSignup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".ReminderReciever" />
+        <receiver android:name=".SnoozeReciever" />
+
+        <service android:name=".GeofenceTrasitionService" />
+        <service android:name=".GeofenceServiceAutoReminder" />
+
+        <receiver android:name=".GeoFenceBroadcastReciever" />
+
+        <service
+            android:name=".AutoLocationService"
+            android:foregroundServiceType="location" />
+
+        <service android:name=".BackgroundServiceForSnooze"
+            android:foregroundServiceType="location"/>
+
+        <receiver android:name=".RecieverStopService" />
+        <receiver android:name=".RecieverStopServiceSnooze">
+            <intent-filter >
+                <action android:name="com.fyp.reminder.android.action.broadcast"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

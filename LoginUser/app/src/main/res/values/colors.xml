@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02443E</color>
+    <color name="colorPrimaryDark">#04554E</color>
+    <color name="colorAccent">#03574F</color>
+
+
+
+
+    <color name="bgBackSideColor">#E6E4F5</color>
+    <color name="bgTitleLeft">#0C95A5</color>
+    <color name="bgTitleRight">#ffffff</color>
+    <color name="bgContentTop">#13aabc</color>
+    <color name="bgContent">#ffffff</color>
+    <color name="contentDividerLine">#e0e0e0</color>
+    <color name="contentBadgeTitle">#a9a9a9</color>
+    <color name="titleBadgeTitle">#adafb1</color>
+    <color name="titleBadgeText">#8B8D8F</color>
+    <color name="mainTextColor">#343d43</color>
+    <color name="btnRequest">#ffbf12</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+
+
+
+    <!--Accent Color Collection-->
+    <color name="accent_red">#f44336</color>
+    <color name="accent_pink">#e91e63</color>
+    <color name="accent_purple">#9c27b0</color>
+    <color name="accent_indago">#3f51b5</color>
+    <color name="accent_blue">#2196f3</color>
+    <color name="accent_teal">#009688</color>
+    <color name="accent_green">#4caf50</color>
+    <color name="accent_amber">#ffc107</color>
+    <color name="accent_brown">#795548</color>
+    <color name="accent_grey">#9e9e9e</color>
+
+
+
+    <color name="color_primary_text">#212121</color>
+    <color name="color_secondary_text">#757575</color>
+    <color name="color_icons">#FFFFFF</color>
+    <color name="color_divider">#BDBDBD</color>
+    <color name="dusk_yellow">#A69D62</color>
+    <color name="light_gray">#D3D3D3</color>
+</resources>
